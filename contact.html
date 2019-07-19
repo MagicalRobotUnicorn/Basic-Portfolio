@@ -1,22 +1,167 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-  </head>
 
-  <body>
-      <form>
-        <fieldset>
-          <legend>Contact information</legend>
-          First name:<br>
-          <input type="text" name="firstname" value="John Smith"><br>
-          Last name:<br>
-          <input type="text" name="lastname" value="example@gmail.com"><br><br>
-          <textarea name="message" rows="10" cols="30">
+<head>
+  <title>Portfolio</title>
+  <!-- <link rel="stylesheet" type="text/stylesheet" href="assets/css/stylesheet.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap" rel="stylesheet">
+  <style>
+    .header {
+      width: 100%;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      /* background-color: grey; */
+      align-content: center;
+      margin-bottom: 30px;
+      /* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); */
+      border-bottom: 2px solid grey;
+    }
 
-          </textarea>
-          <input type="submit" value="Submit">
-        </fieldset>
-      </form>
-  </body>
+    .footer {
+      width: 100%;
+      /* padding-top: 25px; */
+      /* padding-bottom: 25px; */
+      /* background-color: grey; */
+      /* align-content: center; */
+      /* margin-bottom: 30px; */
+      /* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); */
+      border-top: 2px solid grey;
+      height: 5px;
+    }
+
+    .name {
+      float: left;
+    }
+
+    .nav {
+      float: right;
+    }
+
+    .inner-header {
+      width: 960px;
+      margin-top: 20px;
+    }
+
+    .name {
+      font-family: 'Permanent Marker', cursive;
+    }
+
+    .nav {
+      font-family: 'Permanent Marker', cursive;
+    }
+
+    body {
+      font-family: 'Cormorant Infant', serif;
+    }
+
+    .container {
+      font-size: 20px;
+    }
+
+    .total-content {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      /* display: flex;
+      flex-direction: column; */
+    }
+
+    .inner-container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .title {
+      margin: 75px;
+    }
+
+    .img-circle {
+      width: auto;
+      border-radius: 50%;
+      /* float: left; */
+      margin-right: 50px;
+    }
+
+    .word-content {
+      width: 500px;
+      height: 333px;
+      text-align: left;
+      float: right;
+      display: block;
+    }
+
+    h1 {
+      margin: 75px;
+    }
+
+    form {
+      align-content: left;
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <!-- Use the w3 schools card layout for the boxes here -->
+    <div class="main-container">
+      <!-- width: 100%, two containers, one left float, one right float -->
+      <div class="inner-header">
+        <div class="name">
+          <h2>John Henry Weber</h2>
+        </div>
+        <div class="nav">
+          <h2>About | Portfolio | Contact</h2>
+        </div>
+      </div>
+
+      <div class="header">
+        <!-- <div class="inner-header">
+        <div class="name">
+          <h2>John Henry Weber</h2>
+        </div>
+        <div class="nav">
+          <h2>About | Portfolio | Contact</h2>
+        </div>
+      </div> -->
+      </div>
+      <div class="total-content">
+        <div class="title">
+          <h1>Contact Page</h1>
+        </div>
+        <form>
+            <fieldset>
+              <legend>Contact Me About My Work</legend>
+              First name:<br>
+              
+              <input type="text" name="firstname" value="John Smith"><br><br>
+              Email Address:<br>
+              <input type="text" name="lastname" value="example@gmail.com"><br><br>
+              Details of Inquiry:<br>
+              <textarea name="message" rows="10" cols="30">
+    
+              </textarea>
+              <br />
+              <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="footer">
+      <div class="inner-header">
+        <div class="nav">
+            &#169; John Henry Weber, 2019
+        </div>
+    </div>
+    <!-- <div class="inner-container">
+      <div class="inner-header">
+          &#169; John Henry Weber, 2019
+      </div>
+    </div> -->
+</body>
+
 </html>
