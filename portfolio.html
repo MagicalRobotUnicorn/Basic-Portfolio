@@ -10,11 +10,14 @@
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       transition: 0.3s;
-      height: 30%;
-      width: 15%;
+      /* height: 40%; */
+      /* width: 15%; */
+      height: 400px;
+      width: 240px;
       float: left;
-      margin-right: 20px;
-      margin-bottom: 20px;
+      margin: 40px;
+      /* margin-bottom: 40px; */
+      font-size: 18px;
     }
 
     .card:hover {
@@ -25,17 +28,20 @@
       padding: 2px 16px;
     }
 
-    .main-container {
+    /* .main-container {
       display: flex;
       flex-direction: column;
-    }
+    } */
 
     .header {
       width: 100%;
       padding-top: 25px;
       padding-bottom: 25px;
-      background-color: grey;
+      /* background-color: grey; */
       align-content: center;
+      margin-bottom: 30px;
+      /* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); */
+      border-bottom: 2px solid grey;
     }
 
     .name {
@@ -48,7 +54,9 @@
 
     .inner-header {
       width: 960px;
+      margin-top: 20px;
     }
+
     .name {
       font-family: 'Permanent Marker', cursive;
     }
@@ -60,76 +68,111 @@
     body {
       font-family: 'Cormorant Infant', serif;
     }
+
+    .container {
+      font-size: 20px;
+    }
+
+    .total-content {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .inner-container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .title {
+      margin: 75px;
+    }
   </style>
 </head>
 
 <body>
-  <!-- Use the w3 schools card layout for the boxes here -->
-  <div class="main-container">
-    <!-- width: 100%, two containers, one left float, one right float -->
-    <div class="header">
+  <center>
+    <!-- Use the w3 schools card layout for the boxes here -->
+    <div class="main-container">
+      <!-- width: 100%, two containers, one left float, one right float -->
       <div class="inner-header">
         <div class="name">
-          <h3>John Henry Weber</h3>
+          <h2>John Henry Weber</h2>
         </div>
         <div class="nav">
-          <h3>About | Portfolio | Contact</h3>
+          <h2>About | Portfolio | Contact</h2>
+        </div>
+      </div>
+      <div class="header">
+        <!-- <div class="inner-header">
+        <div class="name">
+          <h2>John Henry Weber</h2>
+        </div>
+        <div class="nav">
+          <h2>About | Portfolio | Contact</h2>
+        </div>
+      </div> -->
+      </div>
+      <div class="title">
+        <h1>Current Projects</h1>
+      </div>
+      <div class="total-content">
+        <div class="inner-container">
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Avatar of an Avatar</b></h4>
+              <p>The most meta project, ever.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/images/hacker.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Guy in a Hoodie</b></h4>
+              <p>A JRPG about a guy in a hoodie.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/images/nerdf.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Nerdy Woman Thing</b></h4>
+              <p>Think Liz Lemon meets Ada Lovelace.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="inner-container">
+          <div class="card">
+            <img src="assets/images/nerdm.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Nerdy Guy Thing</b></h4>
+              <p>Bust out your fedoras and neck beards!</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/images/oldf.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Software for the Elderly</b></h4>
+              <p>21st century computing meets the carrier pidgeon.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/images/suitm.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Business Guy Stuff</b></h4>
+              <p>Fishing for corporate contracts with buzzwords since 2019.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="inner-container">
-      <div class="card">
-        <img src="assets/images/avatar.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Avatar of an Avatar</b></h4>
-          <p>The most meta project, ever.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="assets/images/hacker.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Guy in Hoodie</b></h4>
-          <p>A JRPG about a guy in a hoodie</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="assets/images/nerdf.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Nerdy Woman Thing</b></h4>
-          <p>Trivializing women in tech through gender specific software. It's pink.</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="inner-container">
-      <div class="card">
-        <img src="assets/images/nerdm.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Nerdy Guy Thing</b></h4>
-          <p>Bust out your fedoras and neck beards!</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="assets/images/oldf.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Software for the Elderly</b></h4>
-          <p>21st century computing meets the carrier pidgeon.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="assets/images/suitm.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Business Guy Stuff</b></h4>
-          <p>Fishing for corporate contracts with buzzwords since 2019.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 
 </html>
